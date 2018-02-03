@@ -15,54 +15,11 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 #kk.loginResult()
 
 cl = LINETCR.LINE()
-cl.login(token="Epi71af9Ht5Ki1kfRUlf.ICpPiGD6lKxQUjAskbI4lW.WmzsyphjRnTP4dc6cqW0tPFed0l+MMvyvEx6TyIHadk=")
+cl.login(token="EpyQM4pDcAHnyW2bafo2.zvPHdJ4fcLQ71+MmudKAGG.lS2aglYWBHCGS/qQCl3c3B0bUR3AkWtT0dzvOYAPbxs=")
 cl.loginResult()
 
-satpam = LINETCR.LINE() # Koplaxs # Login Pake Akun Utama Kalian(Gunanya Supaya Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
-satpam.login(token="EpmkPGswRbUwM7tiHdP4.QXYHCXzQnIXP72luipN3Ha.HvNi//mpiR9Wq3M9B6dRTLrtDYPgA5sJNQn95BAg6yU=")
-satpam.loginResult()
+satpam = Kc = ko = ki = ku = kk = ks = ke = ka = kb = cl
 
-ki = LINETCR.LINE()
-ki.login(token="Ep205ooa2paIlQD4fF36.0ClDQ0XXExcmqznHTHonrG.ePxVhUViVxzDt/MTlVPoHRyXtIjYdFPSBnkQgR+GEEE=")
-ki.loginResult()
-
-kk = LINETCR.LINE()
-kk.login(token="EpMQ0BlQZFd1V1sh3BWb.56Q6F8HJ0G7hxHXo37fg6W.Czy5Ky+JBDFT6oX1cu8S6tjtBthS2RRIkRLE5exGujg=")
-kk.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(token="EpPnFYjf8JgeGDjg8iN9.q+GCiS+H2/Jt0U2vphfDcq./x1OuKAPjCkxfbrJ0tJp9+HNmhwIS36urRtv9oxdnc4=")
-ks.loginResult()
-
-ka = LINETCR.LINE()
-ka.login(token="EpmkwLjzgcNxnWDiq6Zd.K2HqbjOiKELgUqJfBR1jZq.+yQZFHDaUrsRGeHBpjj7Bsk1hg18j/k//34tkC0Jd5Y=")
-ka.loginResult()
-
-kc = LINETCR.LINE()
-kc.login(token="EpsvFQLyEKWGzfVsNKm2.BM8ZzCvoIdukCQza1HyZGG.wh4j1RRd2Tc1fkaKwThiZIe6e0ty9jx3MDDexyFbZpE=")
-kc.loginResult()
-
-kb = LINETCR.LINE()
-kb.login(token="EpwWpxc0iAczxj8ieWmf.A48KdZfnSSzOHMavgsN8dW.pFZhl2M4v4kj63+BApWFIPq9EIQiU5Qg1elKDXiEc/s=")
-kb.loginResult()
-
-km = LINETCR.LINE()
-km.login(token="EpFrt6RnLUmdHBVfbwI7.qSWU/6UEE3rWWs4Pndd5jW.19GrE3gG/jGDsTPm/ZEgUA6z8HHe9Fa0l0APu6nXJ7Q=")
-km.loginResult()
-
-cl
-
-ko = ki
-
-ku = kk
-
-ks
-
-ke = ka
-
-kb
-
-kc
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -476,13 +433,13 @@ Jmid = km.getProfile().mid
 Smid = satpam.getProfile().mid #Akun Utama
 
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Smid,Jmid,"u5427d8047ab127f5e237eaedd1f0b93b","uab1ca173166a362c69ef62d420f9f784","u051cd9062ec1528d9e16cc784efca04b"]
-admin=["uab1ca173166a362c69ef62d420f9f784","ue43898158971147528350ad49b5e8df4","u3d27c322e83dac8c6ad9a2adf12dbf92","u8065b0be04ba4f39ea865a23ab6ba20e",mid]
-staff=["u37470b87308ba0c907d493205cbe2676","uc6dc9e8314e8fc3e2834631f4b048506","u5c80975703f4c22a6b3a8811bb40d09e","ue5cd76e14ab4783e702df35a29b4ee3c","u542ca87275438b089fffb6d8adc49c07","ud14122efeea90e7354f3619ad86bb1a2","u8fba8c8444fcf7ff8b34f1f0f2cd6db1"]
-creator=["u5427d8047ab127f5e237eaedd1f0b93b","uab1ca173166a362c69ef62d420f9f784","u051cd9062ec1528d9e16cc784efca04b"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Smid,Jmid,"u8ae7ccff22103d8de798f6c893c6c9d"]
+admin=[]
+staff=[]
+creator=["u8ae7ccff22103d8de798f6c893c6c9d"]
 peminjam=[]
-adminsa=["u5427d8047ab127f5e237eaedd1f0b93b","uab1ca173166a362c69ef62d420f9f784"]
-pembuat=["uab1ca173166a362c69ef62d420f9f784"]
+adminsa=["u8ae7ccff22103d8de798f6c893c6c9d"]
+pembuat=["u8ae7ccff22103d8de798f6c893c6c9d"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -4107,7 +4064,7 @@ def bot(op):
                     cl.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
             elif 'creator' in msg.text.lower():
 				msg.contentType = 13
-				msg.contentMetadata = {'mid': "uab1ca173166a362c69ef62d420f9f784"}
+				msg.contentMetadata = {'mid': "u8ae7ccff22103d8de798f6c893c6c9db"}
 				cl.sendMessage(msg)
 				cl.sendText(msg.to,"Pembuat kami")
             elif "Admin on @" in msg.text:
